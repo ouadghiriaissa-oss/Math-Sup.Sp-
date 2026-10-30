@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math-Sup/Spé</title>
+    
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+      }
+      .page {
+        display: flex;
+        min-height: 100vh;
+      }
+      .gauche {
+        width: 40%;
+        background: linear-gradient(55deg, #AAA2B3, #7233aa, #603d61);
+    
+      }
+      .h3 {
+        margin-top: 15px;
+        padding: 10px;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 30px;
+        text-shadow: 5px 10px 10px rgb(102, 101, 101);
+      }
+      .droite {
+        width: 100%;
+        background: linear-gradient(55deg, #AAA2B3, #7233aa);
+        padding: 15px;
+      }
+      .h1 {
+        letter-spacing: 3px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 40px;
+        font-weight: 900;
+        color: rgb(54, 0, 54);
+        text-shadow: 5px 5px 3px gray;
+      }
+
+      .gauche {
+        animation: monter 1s ease-out both;
+      }
+
+      .h3 {
+        animation: monter 1s ease-out both;
+        animation-delay: 0.2s;
+      }
+
+      .droite {
+        animation: monter 1.2s ease-out both;
+        animation-delay: 0.2s;
+      }
+
+      .h1 {
+        animation: monter 1s ease-out both;
+        animation-delay: 0.4s;
+      }
+      @keyframes monter {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+.para1{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #910050;
+    max-width: 500px;
+    margin: 15px 20px;
+    letter-spacing: 0.5px;
+    animation: monter 1s ease-out both;
+    animation-delay: 0.6s;
+
+}
+.img1{
+     width: 110px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    clip-path: circle();
+    transform: translateY(-70px);
+    
+}
+
+.math-symbols {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    pointer-events: none;
+}
+
+.math-symbols span {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+    transform: rotate(-15deg);
+}
+
+.h3 {
+    position: relative;
+    z-index: 1;
+
+
+}
+.img2{
+     width: 110px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    clip-path: circle();
+    transform: translateY(-70px);
+
+}
+.img3{
+     width: 110px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    clip-path: circle();
+    transform: translateY(-50px);
+}
+.boutons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    max-width: 500px;
+    margin: 30px auto;
+    
+}
+.boutons button {
+    border: none;
+    padding: 52px;
+    border-radius: 80px 20px 50px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(55deg, rgb(189, 53, 75), pink, pink);
+    color: white;
+}
+.smath {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    pointer-events: none;
+}
+
+.smath span {
+    color: rgba(1, 120, 136, 0.15);
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+    transform: rotate(-15deg);
+}
+
+.boutons button:hover {
+    background: linear-gradient(30deg, rgb(1, 255, 234), rgb(8, 1, 94));
+    transform: scale(1.1,1);
+    transition: 0.8s;
+}
+    </style>
+    <div class="page">
+      <div class="gauche">
+        <h3 class="h3"> 🏠︎ Accueil</h3>
+       
+         <div class="math-symbols">
+        <span>∑</span>
+        <span>∫</span>
+        <span>π</span>
+        <span>√x</span>
+        <span>∞</span>
+        <span>Δ</span>
+        <span>∂</span>
+        <span>θ</span>
+        <span>∫</span>
+        <span>π</span>
+        <span>√x</span>
+        <span>∞</span>
+        <span>Δ</span>
+        <span>∂</span>
+        <span>θ</span>
+        <span>∮</span>
+<span>∬</span>
+<span>∭</span>
+<span>∮</span>
+<span>∯</span>
+<span>∰</span>
+<span>∇²</span>
+<span>f(x)</span>
+<span>f′(x)</span>
+<span>dy/dx</span>
+<span>lim</span>
+<span>log</span>
+<span>ln(x)</span>
+<span>eˣ</span>
+<span>x²</span>
+<span>xⁿ</span>
+<span>√a</span>
+<span>∛x</span>
+<span>|x|</span>
+<span>‖x‖</span>
+    </div>
+   
+      </div>
+
+      <div class="droite">
+        <h1 class="h1">Math-Sup/Spé</h1>
+        <p class="para1">
+          Bienvenue sur Math-Sup/Spé, votre espace dédié aux mathématiques
+          supérieures. Découvrez des cours détaillés, des exercices corrigés et
+          des examens pour renforcer vos connaissances, développer votre logique
+          et réussir votre parcours universitaire.
+        </p>
+        <div class="smath">
+<span>∑</span>
+<span>∫</span>
+<span>π</span>
+<span>√x</span>
+<span>∞</span>
+<span>Δ</span>
+<span>∂</span>
+<span>θ</span>
+<span>∇</span>
+<span>α</span>
+<span>β</span>
+<span>γ</span>
+<span>λ</span>
+<span>μ</span>
+<span>Ω</span>
+<span>Σ</span>
+<span>Φ</span>
+<span>Ψ</span>
+<span>ε</span>
+<span>ρ</span>
+<span>σ</span>
+<span>ω</span>
+<span>φ</span>
+<span>Γ</span>
+<span>∀</span>
+<span>∃</span>
+<span>∈</span>
+<span>∉</span>
+<span>⊂</span>
+<span>⊆</span>
+<span>∪</span>
+<span>∩</span>
+<span>∅</span>
+<span>∅</span>
+<span>ℝ</span>
+<span>ℕ</span>
+<span>ℤ</span>
+<span>ℚ</span>
+<span>ℂ</span>
+<span>≠</span>
+<span>≈</span>
+<span>≡</span>
+<span>≤</span>
+<span>≥</span>
+<span>±</span>
+<span>÷</span>
+<span>×</span>
+<span>·</span>
+<span>∝</span>
+<span>∴</span>
+<span>∵</span>
+<span>∠</span>
+<span>⊥</span>
+<span>∥</span>
+<span>∝</span>
+<span>∮</span>
+<span>∬</span>
+<span>∭</span>
+<span>∮</span>
+<span>∯</span>
+<span>∰</span>
+<span>∇²</span>
+<span>f(x)</span>
+<span>f′(x)</span>
+<span>dy/dx</span>
+<span>lim</span>
+<span>log</span>
+<span>ln(x)</span>
+<span>eˣ</span>
+<span>x²</span>
+<span>xⁿ</span>
+<span>√a</span>
+<span>∛x</span>
+<span>|x|</span>
+<span>‖x‖</span>
+<span>min</span>
+<span>max</span>
+<span>det(A)</span>
+<span>tr(A)</span>
+<span>A⁻¹</span>
+<span>Aᵀ</span>
+<span>λ₁</span>
+<span>x₁</span>
+<span>yₙ</span>
+<span>aₙ</span>
+<span>uₙ</span>
+<span>→</span>
+<span>↔</span>
+<span>⇒</span>
+<span>⇔</span>
+<span>∞</span>
+<span>∑ₙ</span>
+<span>∏ₙ</span>
+<span>∓</span>
+<span>∼</span>
+<span>⊕</span>
+<span>⊗</span>
+<span>∧</span>
+<span>∨</span>
+<span>¬</span>
+<span>∣</span>
+<span>∤</span>
+<span>∠ABC</span>
+<span>sin(x)</span>
+<span>cos(x)</span>
+<span>tan(x)</span>
+<span>cot(x)</span>
+</div>
+        
+            <div class="boutons">
+    <button class="btnanalyse">Analyse</button>
+    <button class="btnalgébre">Algèbre</button>
+    <button>Probabilité</button>
+    <button>Informatique</button>
+
+
+
+        </div>
+        
+
+        </div>
+      </div>
+    </div>
+    <script>
+    document.querySelector(".btnanalyse").addEventListener("click", function() {
+        window.location.href = "analyse.html";
+    });
+   
+    document.querySelector(".btnalgébre").addEventListener("click", function() {
+        window.location.href = "algébre.html";
+    });
+
+</script>
+  </body>
+</html>
