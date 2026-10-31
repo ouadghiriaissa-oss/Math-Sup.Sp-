@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+
+</head>
+<body>
+    <style>
+        nav {
+    background: rgba(196, 196, 196, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 0.6px;
+    position: fixed;
+    width: 23%;
+    right: 10%;
+    top: 16px;
+    left: auto;
+   border-radius: 30px;
+   border: 1px solid rgba(196, 196, 196, 0.5);
+   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0px;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: #898bdf;
+    font-weight: 700;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+}
+a:hover{
+    color: #fff;
+}
+
+    </style>
+</body>
+</html>
